@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<!-- General Settings: -->
+<meta charset="utf-8">
+<title>Firescue</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+<link rel="stylesheet" href="/static/materialize/css/materialize.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+	/*
+	svg.heightgraph-container {
+    position: absolute;
+		left: 0%;
+		bottom: 0;
+    width: 100%;
+    bottom: -12px;
+    border-radius: 0;
+	}
+	*/
+	.back-button {
+		position: absolute;
+		bottom: 1em;
+    left: 1em;
+    width: 52px;
+    height: 52px;
+    z-index: 99999;
+    padding: 1em 2em;
+    background: #70c2e8;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50%;
+    color: white;
+	}
+	.back-button .material-icons {
+	position: relative;
+    right: 12px;
+		top: -1px;
+    font-weight: 700;
+	}
+</style>
+</head>
+<body>
+		<div id="map" class="map"></div>
+		<a href="/" class="back-button"><i class="material-icons">arrow_back</i></a>
+	<script>
+		let longitude={{longitude}};
+		let latitude={{latitude}};
+		let longitudedest={{longitudedest}};
+		let latitudedest={{latitudedest}};
+		let points={{points}};
+	</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+	<script src="/static/materialize/js/materialize.js"></script>
+	<script src="/static/js/result.js"></script>
+</body>
+</html>

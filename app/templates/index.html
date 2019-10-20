@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Firescue</title>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div class="row screen">
+	<div class="col s12 l12 mapa">
+		<div id="map" class="map"></div>
+	</div>
+	<form id="input_form" action="/build" method="post">
+		<input type="hidden" name="problems" id="problems">
+		<input type="hidden" name="origem_lat" id="origem_lat">
+		<input type="hidden" name="origem_lng" id="origem_lng">
+		<input type="hidden" name="destino_lat" id="destino_lat">
+		<input type="hidden" name="destino_lng" id="destino_lng">
+	</form>
+	<a class="robotoCondensed btn" onclick="submitpoint()" style="background-color: #dd2e0e; float: left; left:25%; border-radius: 12px; position: absolute; bottom: 0; z-index: 99999; width: 50%;height: 52px; font-weight: 700; font-size: 22px; line-height: 2.5;">Criar Rota
+  <i class="material-icons">directions</i></a>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+	<script src="static/js/rotatedMarker.js"></script>
+	<script src="static/js/index.js"></script>
+</body>
+</html>

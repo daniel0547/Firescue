@@ -1,0 +1,30 @@
+body{
+	margin:0px;
+}
+
+.screen{
+		margin:0 !important;
+		padding: 0 !important;
+}
+
+.mapa{
+  padding: 0px !important;
+}
+
+.map{
+	min-height: 100vh;
+}
+
+.formulario{
+	max-height: 100vh;
+	overflow-y: auto;
+}
+
+.formulario form{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.index_text{
+	margin:10%;
+}

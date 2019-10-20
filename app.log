@@ -1,0 +1,1265 @@
+[2019-10-20 06:00:54 +0000] [15382] [INFO] Starting gunicorn 19.9.0
+[2019-10-20 06:00:54 +0000] [15382] [INFO] Listening at: http://0.0.0.0:7000 (15382)
+[2019-10-20 06:00:54 +0000] [15382] [INFO] Using worker: sync
+[2019-10-20 06:00:54 +0000] [15390] [INFO] Booting worker with pid: 15390
+[2019-10-20 06:00:54 +0000] [15394] [INFO] Booting worker with pid: 15394
+[2019-10-20 06:00:54 +0000] [15396] [INFO] Booting worker with pid: 15396
+[2019-10-20 06:00:54 +0000] [15399] [INFO] Booting worker with pid: 15399
+[2019-10-20 07:02:06 +0000] [15382] [INFO] Handling signal: term
+[2019-10-20 07:02:07 +0000] [15390] [INFO] Worker exiting (pid: 15390)
+[2019-10-20 07:02:07 +0000] [15394] [INFO] Worker exiting (pid: 15394)
+[2019-10-20 07:02:07 +0000] [15396] [INFO] Worker exiting (pid: 15396)
+[2019-10-20 07:02:07 +0000] [15399] [INFO] Worker exiting (pid: 15399)
+[2019-10-20 07:02:07 +0000] [15382] [INFO] Shutting down: Master
+/root/firescue/flask/init.sh: 2: /root/firescue/flask/init.sh: privkey.pem: not found
+[2019-10-20 07:02:07 +0000] [22805] [INFO] Starting gunicorn 19.9.0
+[2019-10-20 07:02:07 +0000] [22805] [INFO] Listening at: https://0.0.0.0:7000 (22805)
+[2019-10-20 07:02:07 +0000] [22805] [INFO] Using worker: sync
+[2019-10-20 07:02:07 +0000] [22808] [INFO] Booting worker with pid: 22808
+[2019-10-20 07:02:07 +0000] [22810] [INFO] Booting worker with pid: 22810
+[2019-10-20 07:02:07 +0000] [22812] [INFO] Booting worker with pid: 22812
+[2019-10-20 07:02:07 +0000] [22814] [INFO] Booting worker with pid: 22814
+[2019-10-20 07:36:09 +0000] [22805] [INFO] Handling signal: term
+[2019-10-20 07:36:09 +0000] [22808] [INFO] Worker exiting (pid: 22808)
+[2019-10-20 07:36:09 +0000] [22810] [INFO] Worker exiting (pid: 22810)
+[2019-10-20 07:36:09 +0000] [22812] [INFO] Worker exiting (pid: 22812)
+[2019-10-20 07:36:09 +0000] [22814] [INFO] Worker exiting (pid: 22814)
+[2019-10-20 07:36:10 +0000] [22805] [INFO] Shutting down: Master
+[2019-10-20 07:36:10 +0000] [26638] [INFO] Starting gunicorn 19.9.0
+[2019-10-20 07:36:10 +0000] [26638] [INFO] Listening at: https://0.0.0.0:7000 (26638)
+[2019-10-20 07:36:10 +0000] [26638] [INFO] Using worker: sync
+[2019-10-20 07:36:10 +0000] [26641] [INFO] Booting worker with pid: 26641
+[2019-10-20 07:36:10 +0000] [26643] [INFO] Booting worker with pid: 26643
+[2019-10-20 07:36:10 +0000] [26646] [INFO] Booting worker with pid: 26646
+[2019-10-20 07:36:10 +0000] [26648] [INFO] Booting worker with pid: 26648
+[2019-10-20 07:51:27 +0000] [26648] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 08:03:37 +0000] [26643] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 08:04:58 +0000] [26643] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 10:04:27 +0000] [26646] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 12:21:52 +0000] [26641] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 12:34:05 +0000] [26648] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 12:38:07 +0000] [26648] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:38:07 +0000] [26641] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:38:08 +0000] [26646] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:38:08 +0000] [26643] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:41:02 +0000] [26648] [INFO] Worker exiting (pid: 26648)
+[2019-10-20 12:41:02 +0000] [26646] [INFO] Worker exiting (pid: 26646)
+[2019-10-20 12:41:02 +0000] [26643] [INFO] Worker exiting (pid: 26643)
+[2019-10-20 12:41:02 +0000] [26641] [INFO] Worker exiting (pid: 26641)
+[2019-10-20 12:41:02 +0000] [28702] [INFO] Booting worker with pid: 28702
+[2019-10-20 12:41:02 +0000] [28705] [INFO] Booting worker with pid: 28705
+[2019-10-20 12:41:02 +0000] [28708] [INFO] Booting worker with pid: 28708
+[2019-10-20 12:41:02 +0000] [28710] [INFO] Booting worker with pid: 28710
+[2019-10-20 12:41:17,012] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 16, in build
+    route=calcroute(olng,olat,dlng,dlat)
+NameError: name 'calcroute' is not defined
+[2019-10-20 12:41:58 +0000] [28702] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:41:58 +0000] [28708] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:41:58 +0000] [28705] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:41:58 +0000] [28710] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:42:40 +0000] [28710] [INFO] Worker exiting (pid: 28710)
+[2019-10-20 12:42:40 +0000] [28705] [INFO] Worker exiting (pid: 28705)
+[2019-10-20 12:42:40 +0000] [28702] [INFO] Worker exiting (pid: 28702)
+[2019-10-20 12:42:40 +0000] [28708] [INFO] Worker exiting (pid: 28708)
+[2019-10-20 12:42:41 +0000] [28890] [INFO] Booting worker with pid: 28890
+[2019-10-20 12:42:41 +0000] [28892] [INFO] Booting worker with pid: 28892
+[2019-10-20 12:42:41 +0000] [28893] [INFO] Booting worker with pid: 28893
+[2019-10-20 12:42:41 +0000] [28897] [INFO] Booting worker with pid: 28897
+[2019-10-20 12:42:53,824] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 32, in build
+    route=calcroute(olng,olat,dlng,dlat)
+  File "/root/firescue/flask/app/routes.py", line 13, in calcroute
+    body = {"coordinates":[[p1lat,p1lng],[p2lat,p2lng]], "elevation":"true", "extra_info":["steepness"],"geometry_simplify":"false","instructions":"true","instructions_format":"html","language":"pt","options":{'avoid_polygons':getexpandedareas(),"avoid_features":["ferries","steps","fords"],"profile_params":{"weightings":{"steepness_difficulty":1}}},"units":"m","continue_straight":"true","geometry":"true"}
+NameError: name 'getexpandedareas' is not defined
+[2019-10-20 12:44:24 +0000] [28897] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:44:25 +0000] [28890] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:44:25 +0000] [28893] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:44:25 +0000] [28892] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:44:31 +0000] [28893] [INFO] Worker exiting (pid: 28893)
+[2019-10-20 12:44:31 +0000] [28892] [INFO] Worker exiting (pid: 28892)
+[2019-10-20 12:44:31 +0000] [28890] [INFO] Worker exiting (pid: 28890)
+[2019-10-20 12:44:31 +0000] [28897] [INFO] Worker exiting (pid: 28897)
+[2019-10-20 12:44:31 +0000] [29376] [INFO] Booting worker with pid: 29376
+[2019-10-20 12:44:31 +0000] [29378] [INFO] Booting worker with pid: 29378
+[2019-10-20 12:44:31 +0000] [29380] [INFO] Booting worker with pid: 29380
+[2019-10-20 12:44:31 +0000] [29382] [INFO] Booting worker with pid: 29382
+[2019-10-20 12:44:31,939] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 88, in build
+    route=calcroute(olng,olat,dlng,dlat)
+  File "/root/firescue/flask/app/routes.py", line 13, in calcroute
+    body = {"coordinates":[[p1lat,p1lng],[p2lat,p2lng]], "elevation":"true", "extra_info":["steepness"],"geometry_simplify":"false","instructions":"true","instructions_format":"html","language":"pt","options":{'avoid_polygons':getexpandedareas(),"avoid_features":["ferries","steps","fords"],"profile_params":{"weightings":{"steepness_difficulty":1}}},"units":"m","continue_straight":"true","geometry":"true"}
+NameError: name 'getexpandedareas' is not defined
+[2019-10-20 12:45:10 +0000] [29376] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:10 +0000] [29378] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:10 +0000] [29380] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:10 +0000] [29382] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:18 +0000] [29382] [INFO] Worker exiting (pid: 29382)
+[2019-10-20 12:45:18 +0000] [29380] [INFO] Worker exiting (pid: 29380)
+[2019-10-20 12:45:18 +0000] [29378] [INFO] Worker exiting (pid: 29378)
+[2019-10-20 12:45:18 +0000] [29376] [INFO] Worker exiting (pid: 29376)
+[2019-10-20 12:45:18 +0000] [29480] [INFO] Booting worker with pid: 29480
+[2019-10-20 12:45:18 +0000] [29482] [INFO] Booting worker with pid: 29482
+[2019-10-20 12:45:18,735] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 88, in build
+    route=calcroute(olng,olat,dlng,dlat)
+  File "/root/firescue/flask/app/routes.py", line 19, in calcroute
+    r = requests.post(url = url, json = body, headers=headers)
+NameError: name 'requests' is not defined
+[2019-10-20 12:45:18 +0000] [29485] [INFO] Booting worker with pid: 29485
+[2019-10-20 12:45:18 +0000] [29487] [INFO] Booting worker with pid: 29487
+[2019-10-20 12:45:40 +0000] [29480] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:40 +0000] [29482] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:40 +0000] [29485] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:40 +0000] [29487] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:45:47 +0000] [29485] [INFO] Worker exiting (pid: 29485)
+[2019-10-20 12:45:47 +0000] [29482] [INFO] Worker exiting (pid: 29482)
+[2019-10-20 12:45:47 +0000] [29480] [INFO] Worker exiting (pid: 29480)
+[2019-10-20 12:45:47 +0000] [29487] [INFO] Worker exiting (pid: 29487)
+[2019-10-20 12:45:48 +0000] [29546] [INFO] Booting worker with pid: 29546
+[2019-10-20 12:45:48 +0000] [29548] [INFO] Booting worker with pid: 29548
+[2019-10-20 12:45:48 +0000] [29549] [INFO] Booting worker with pid: 29549
+[2019-10-20 12:45:48 +0000] [29552] [INFO] Booting worker with pid: 29552
+[2019-10-20 12:45:49,814] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 89, in build
+    route=calcroute(olng,olat,dlng,dlat)
+  File "/root/firescue/flask/app/routes.py", line 23, in calcroute
+    routes=convert.decode_polyline(geometry, True)
+NameError: name 'convert' is not defined
+[2019-10-20 12:46:16 +0000] [29549] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:46:16 +0000] [29548] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:46:16 +0000] [29546] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 12:46:16 +0000] [29552] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+{'routes': [{'summary': {'distance': 580.9, 'duration': 232.4, 'ascent': 4.3, 'descent': 0.6}, 'segments': [{'distance': 580.9, 'duration': 232.4, 'steps': [{'distance': 471.7, 'duration': 188.7, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 5]}, {'distance': 51.9, 'duration': 20.8, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [5, 6]}, {'distance': 57.4, 'duration': 23.0, 'type': 4, 'instruction': 'Vire ligeiramente à esquerda em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [6, 8]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [8, 8]}], 'ascent': 4.29814814814813, 'descent': 0.6481481481480387}], 'bbox': [-121.615605, 39.755004, -121.609646, 39.755887], 'geometry': 'eysqFp`heVozhB?iS`CAwDe@?sB_A?_AmBAyAkE|AM_GlAiAkDD?O', 'way_points': [0, 8], 'extras': {'steepness': {'values': [[0, 8, 0]], 'summary': [{'value': 0.0, 'distance': 580.9, 'amount': 100.0}]}}}], 'bbox': [-121.615605, 39.755004, -121.609646, 39.755887], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575549759, 'query': {'coordinates': [[-121.6156053543091, 39.75586749103369], [-121.60974740982057, 39.75499318949525]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+[2019-10-20 12:46:29 +0000] [29546] [INFO] Worker exiting (pid: 29546)
+[2019-10-20 12:46:29 +0000] [29552] [INFO] Worker exiting (pid: 29552)
+[2019-10-20 12:46:29 +0000] [29548] [INFO] Worker exiting (pid: 29548)
+[2019-10-20 12:46:29 +0000] [29549] [INFO] Worker exiting (pid: 29549)
+[2019-10-20 12:46:30 +0000] [29638] [INFO] Booting worker with pid: 29638
+[2019-10-20 12:46:30 +0000] [29639] [INFO] Booting worker with pid: 29639
+[2019-10-20 12:46:30 +0000] [29642] [INFO] Booting worker with pid: 29642
+[2019-10-20 12:46:30 +0000] [29644] [INFO] Booting worker with pid: 29644
+[2019-10-20 12:50:05 +0000] [29644] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 12:52:32 +0000] [26638] [INFO] Handling signal: term
+{'routes': [{'summary': {'distance': 673.1, 'duration': 269.3, 'ascent': 0.6, 'descent': 2.8}, 'segments': [{'distance': 673.1, 'duration': 269.3, 'steps': [{'distance': 385.1, 'duration': 154.1, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 288.0, 'duration': 115.2, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 12]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à esquerda', 'name': '-', 'way_points': [12, 12]}], 'ascent': 0.6083333333332348, 'descent': 2.8083333333332803}], 'bbox': [-121.615949, 39.754492, -121.610456, 39.755877], 'geometry': 'eysqFtbheVozhB?mUhCAwDk@jAHg@r@NWh@z@hAjAFpB^Yv@Qw@p@Gs@v@CoAjAJ{@EDOG', 'way_points': [0, 12], 'extras': {'steepness': {'values': [[0, 12, 0]], 'summary': [{'value': 0.0, 'distance': 673.1, 'amount': 100.0}]}}}], 'bbox': [-121.615949, 39.754492, -121.610456, 39.755877], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575591296, 'query': {'coordinates': [[-121.615948677063, 39.755850994880966], [-121.61043405532838, 39.754580779257104]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'routes': [{'summary': {'distance': 455.6, 'duration': 182.2, 'ascent': 0.5, 'descent': 1.2}, 'segments': [{'distance': 455.6, 'duration': 182.2, 'steps': [{'distance': 344.8, 'duration': 137.9, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 110.8, 'duration': 44.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 6]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à esquerda', 'name': '-', 'way_points': [6, 6]}], 'ascent': 0.4884615384615927, 'descent': 1.1615384615384983}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'geometry': 'eysqFv_heVozhB?oR~BAwDc@jAHg@r@NUh@z@hAD@^', 'way_points': [0, 6], 'extras': {'steepness': {'values': [[0, 6, 0]], 'summary': [{'value': 0.0, 'distance': 455.6, 'amount': 100.0}]}}}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575804563, 'query': {'coordinates': [[-121.61547660827638, 39.75583449872429], [-121.61180734634401, 39.75499318949525]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'routes': [{'summary': {'distance': 672.2, 'duration': 268.9, 'ascent': 0.6, 'descent': 2.8}, 'segments': [{'distance': 672.2, 'duration': 268.9, 'steps': [{'distance': 421.8, 'duration': 168.7, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 250.4, 'duration': 100.2, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 10]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [10, 10]}], 'ascent': 0.5676470588234679, 'descent': 2.8426470588233315}], 'bbox': [-121.616378, 39.754492, -121.610873, 39.755877], 'geometry': 'eysqFjeheVozhB?cXpCAwDo@jAHi@r@NWh@z@hAjAFnB^Yv@Qw@p@Gs@v@CiAjA', 'way_points': [0, 10], 'extras': {'steepness': {'values': [[0, 10, 0]], 'summary': [{'value': 0.0, 'distance': 672.2, 'amount': 100.0}]}}}], 'bbox': [-121.616378, 39.754492, -121.610873, 39.755877], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575671332, 'query': {'coordinates': [[-121.61637783050539, 39.75590048332728], [-121.61086320877077, 39.7545312898626]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'routes': [{'summary': {'distance': 455.6, 'duration': 182.2, 'ascent': 0.5, 'descent': 1.2}, 'segments': [{'distance': 455.6, 'duration': 182.2, 'steps': [{'distance': 344.8, 'duration': 137.9, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 110.8, 'duration': 44.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 6]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à esquerda', 'name': '-', 'way_points': [6, 6]}], 'ascent': 0.4884615384615927, 'descent': 1.1615384615384983}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'geometry': 'eysqFv_heVozhB?oR~BAwDc@jAHg@r@NUh@z@hAD@^', 'way_points': [0, 6], 'extras': {'steepness': {'values': [[0, 6, 0]], 'summary': [{'value': 0.0, 'distance': 455.6, 'amount': 100.0}]}}}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575753391, 'query': {'coordinates': [[-121.61547660827638, 39.75583449872429], [-121.61180734634401, 39.75499318949525]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'routes': [{'summary': {'distance': 455.6, 'duration': 182.2, 'ascent': 0.5, 'descent': 1.2}, 'segments': [{'distance': 455.6, 'duration': 182.2, 'steps': [{'distance': 344.8, 'duration': 137.9, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 110.8, 'duration': 44.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 6]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à esquerda', 'name': '-', 'way_points': [6, 6]}], 'ascent': 0.4884615384615927, 'descent': 1.1615384615384983}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'geometry': 'eysqFv_heVozhB?oR~BAwDc@jAHg@r@NUh@z@hAD@^', 'way_points': [0, 6], 'extras': {'steepness': {'values': [[0, 6, 0]], 'summary': [{'value': 0.0, 'distance': 455.6, 'amount': 100.0}]}}}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575824243, 'query': {'coordinates': [[-121.61547660827638, 39.75583449872429], [-121.61180734634401, 39.75499318949525]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'routes': [{'summary': {'distance': 639.4, 'duration': 255.7, 'ascent': 4.3, 'descent': 0.8}, 'segments': [{'distance': 639.4, 'duration': 255.7, 'steps': [{'distance': 468.0, 'duration': 187.2, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 5]}, {'distance': 51.9, 'duration': 20.8, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [5, 6]}, {'distance': 99.2, 'duration': 39.7, 'type': 4, 'instruction': 'Vire ligeiramente à esquerda em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [6, 9]}, {'distance': 20.3, 'duration': 8.1, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [9, 11]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [11, 11]}], 'ascent': 4.29814814814813, 'descent': 0.7731481481480387}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'geometry': 'eysqFf`heVozhB?_S`CAwDe@?sB_A?_AmBAyAkE|AM_GlAiAkD`@EOl@??V^??BX', 'way_points': [0, 11], 'extras': {'steepness': {'values': [[0, 11, 0]], 'summary': [{'value': 0.0, 'distance': 639.4, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575926848, 'query': {'coordinates': [[-121.61556243896486, 39.75583449872429], [-121.60981178283693, 39.7545312898626]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'bbox': [-121.61612, 39.755867, -121.609254, 39.755889], 'routes': [{'summary': {'distance': 587.0, 'duration': 234.8, 'ascent': 4.6, 'descent': 0.7}, 'segments': [{'distance': 587.0, 'duration': 234.8, 'steps': [{'distance': 587.0, 'duration': 234.8, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 8]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Nunneley Road, à direita', 'name': '-', 'way_points': [8, 8]}], 'ascent': 4.56026785714289, 'descent': 0.703125}], 'bbox': [-121.61612, 39.755867, -121.609254, 39.755889], 'geometry': 'eysqFvcheVozhB?oVlCAwDm@?sBaA?_AmBAyAmE?}@yC?MoA?{AyF', 'way_points': [0, 8], 'extras': {'steepness': {'values': [[0, 8, 0]], 'summary': [{'value': 0.0, 'distance': 587.0, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575841020, 'query': {'coordinates': [[-121.61612033843996, 39.75581800256368], [-121.60925388336183, 39.75581800256368]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'routes': [{'summary': {'distance': 639.4, 'duration': 255.7, 'ascent': 4.3, 'descent': 0.8}, 'segments': [{'distance': 639.4, 'duration': 255.7, 'steps': [{'distance': 468.0, 'duration': 187.2, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 5]}, {'distance': 51.9, 'duration': 20.8, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [5, 6]}, {'distance': 99.2, 'duration': 39.7, 'type': 4, 'instruction': 'Vire ligeiramente à esquerda em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [6, 9]}, {'distance': 20.3, 'duration': 8.1, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [9, 11]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [11, 11]}], 'ascent': 4.29814814814813, 'descent': 0.7731481481480387}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'geometry': 'eysqFf`heVozhB?_S`CAwDe@?sB_A?_AmBAyAkE|AM_GlAiAkD`@EOl@??V^??BX', 'way_points': [0, 11], 'extras': {'steepness': {'values': [[0, 11, 0]], 'summary': [{'value': 0.0, 'distance': 639.4, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575921718, 'query': {'coordinates': [[-121.61556243896486, 39.75583449872429], [-121.60981178283693, 39.7545312898626]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'routes': [{'summary': {'distance': 455.6, 'duration': 182.2, 'ascent': 0.5, 'descent': 1.2}, 'segments': [{'distance': 455.6, 'duration': 182.2, 'steps': [{'distance': 344.8, 'duration': 137.9, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 110.8, 'duration': 44.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 6]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à esquerda', 'name': '-', 'way_points': [6, 6]}], 'ascent': 0.4884615384615927, 'descent': 1.1615384615384983}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'geometry': 'eysqFv_heVozhB?oR~BAwDc@jAHg@r@NUh@z@hAD@^', 'way_points': [0, 6], 'extras': {'steepness': {'values': [[0, 6, 0]], 'summary': [{'value': 0.0, 'distance': 455.6, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575770532, 'query': {'coordinates': [[-121.61547660827638, 39.75583449872429], [-121.61180734634401, 39.75499318949525]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'routes': [{'summary': {'distance': 455.6, 'duration': 182.2, 'ascent': 0.5, 'descent': 1.2}, 'segments': [{'distance': 455.6, 'duration': 182.2, 'steps': [{'distance': 344.8, 'duration': 137.9, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 110.8, 'duration': 44.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 6]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à esquerda', 'name': '-', 'way_points': [6, 6]}], 'ascent': 0.4884615384615927, 'descent': 1.1615384615384983}], 'bbox': [-121.615477, 39.754997, -121.611444, 39.755877], 'geometry': 'eysqFv_heVozhB?oR~BAwDc@jAHg@r@NUh@z@hAD@^', 'way_points': [0, 6], 'extras': {'steepness': {'values': [[0, 6, 0]], 'summary': [{'value': 0.0, 'distance': 455.6, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575816518, 'query': {'coordinates': [[-121.61547660827638, 39.75583449872429], [-121.61180734634401, 39.75499318949525]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+[2019-10-20 12:52:32 +0000] [29638] [INFO] Worker exiting (pid: 29638)
+[2019-10-20 12:52:32 +0000] [29639] [INFO] Worker exiting (pid: 29639)
+[2019-10-20 12:52:32 +0000] [29642] [INFO] Worker exiting (pid: 29642)
+[2019-10-20 12:52:32 +0000] [29644] [INFO] Worker exiting (pid: 29644)
+[2019-10-20 12:52:33 +0000] [26638] [INFO] Shutting down: Master
+[2019-10-20 12:52:33 +0000] [30312] [INFO] Starting gunicorn 19.9.0
+[2019-10-20 12:52:33 +0000] [30312] [INFO] Listening at: https://0.0.0.0:7000 (30312)
+[2019-10-20 12:52:33 +0000] [30312] [INFO] Using worker: sync
+[2019-10-20 12:52:33 +0000] [30315] [INFO] Booting worker with pid: 30315
+[2019-10-20 12:52:33 +0000] [30317] [INFO] Booting worker with pid: 30317
+[2019-10-20 12:52:33 +0000] [30319] [INFO] Booting worker with pid: 30319
+[2019-10-20 12:52:33 +0000] [30321] [INFO] Booting worker with pid: 30321
+[2019-10-20 12:54:37 +0000] [30317] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 12:56:41 +0000] [30312] [INFO] Handling signal: term
+{'routes': [{'summary': {'distance': 639.4, 'duration': 255.7, 'ascent': 4.3, 'descent': 0.8}, 'segments': [{'distance': 639.4, 'duration': 255.7, 'steps': [{'distance': 468.0, 'duration': 187.2, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 5]}, {'distance': 51.9, 'duration': 20.8, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [5, 6]}, {'distance': 99.2, 'duration': 39.7, 'type': 4, 'instruction': 'Vire ligeiramente à esquerda em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [6, 9]}, {'distance': 20.3, 'duration': 8.1, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [9, 11]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [11, 11]}], 'ascent': 4.29814814814813, 'descent': 0.7731481481480387}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'geometry': 'eysqFf`heVozhB?_S`CAwDe@?sB_A?_AmBAyAkE|AM_GlAiAkD`@EOl@??V^??BX', 'way_points': [0, 11], 'extras': {'steepness': {'values': [[0, 11, 0]], 'summary': [{'value': 0.0, 'distance': 639.4, 'amount': 100.0}]}}}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571576076718, 'query': {'coordinates': [[-121.61556243896486, 39.75583449872429], [-121.60981178283693, 39.7545312898626]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'bbox': [-121.616679, 39.755252, -121.611444, 39.755877], 'routes': [{'summary': {'distance': 518.0, 'duration': 207.2, 'ascent': 0.5, 'descent': 0.7}, 'segments': [{'distance': 518.0, 'duration': 207.2, 'steps': [{'distance': 447.5, 'duration': 179.0, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 2]}, {'distance': 70.4, 'duration': 28.2, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [2, 4]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [4, 4]}], 'ascent': 0.5402777777776464, 'descent': 0.7361111111110858}], 'bbox': [-121.616679, 39.755252, -121.611444, 39.755877], 'geometry': 'eysqFfgheVozhB?_ZrCAwDo@jAHk@p@NO', 'way_points': [0, 4], 'extras': {'steepness': {'values': [[0, 4, 0]], 'summary': [{'value': 0.0, 'distance': 518.0, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571576109910, 'query': {'coordinates': [[-121.61667823791505, 39.755735521701325], [-121.61159276962282, 39.75525713075181]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+[2019-10-20 12:56:41 +0000] [30315] [INFO] Worker exiting (pid: 30315)
+[2019-10-20 12:56:41 +0000] [30317] [INFO] Worker exiting (pid: 30317)
+[2019-10-20 12:56:41 +0000] [30319] [INFO] Worker exiting (pid: 30319)
+{'routes': [{'summary': {'distance': 639.4, 'duration': 255.7, 'ascent': 4.3, 'descent': 0.8}, 'segments': [{'distance': 639.4, 'duration': 255.7, 'steps': [{'distance': 468.0, 'duration': 187.2, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 5]}, {'distance': 51.9, 'duration': 20.8, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [5, 6]}, {'distance': 99.2, 'duration': 39.7, 'type': 4, 'instruction': 'Vire ligeiramente à esquerda em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [6, 9]}, {'distance': 20.3, 'duration': 8.1, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [9, 11]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [11, 11]}], 'ascent': 4.29814814814813, 'descent': 0.7731481481480387}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'geometry': 'eysqFf`heVozhB?_S`CAwDe@?sB_A?_AmBAyAkE|AM_GlAiAkD`@EOl@??V^??BX', 'way_points': [0, 11], 'extras': {'steepness': {'values': [[0, 11, 0]], 'summary': [{'value': 0.0, 'distance': 639.4, 'amount': 100.0}]}}}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571575960112, 'query': {'coordinates': [[-121.61556243896486, 39.75583449872429], [-121.60981178283693, 39.7545312898626]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'routes': [{'summary': {'distance': 639.4, 'duration': 255.7, 'ascent': 4.3, 'descent': 0.8}, 'segments': [{'distance': 639.4, 'duration': 255.7, 'steps': [{'distance': 468.0, 'duration': 187.2, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 5]}, {'distance': 51.9, 'duration': 20.8, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [5, 6]}, {'distance': 99.2, 'duration': 39.7, 'type': 4, 'instruction': 'Vire ligeiramente à esquerda em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [6, 9]}, {'distance': 20.3, 'duration': 8.1, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [9, 11]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [11, 11]}], 'ascent': 4.29814814814813, 'descent': 0.7731481481480387}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'geometry': 'eysqFf`heVozhB?_S`CAwDe@?sB_A?_AmBAyAkE|AM_GlAiAkD`@EOl@??V^??BX', 'way_points': [0, 11], 'extras': {'steepness': {'values': [[0, 11, 0]], 'summary': [{'value': 0.0, 'distance': 639.4, 'amount': 100.0}]}}}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571576030136, 'query': {'coordinates': [[-121.61556243896486, 39.75583449872429], [-121.60981178283693, 39.7545312898626]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+[2019-10-20 12:56:41 +0000] [30321] [INFO] Worker exiting (pid: 30321)
+[2019-10-20 12:56:41 +0000] [30312] [INFO] Shutting down: Master
+[2019-10-20 12:56:41 +0000] [30778] [INFO] Starting gunicorn 19.9.0
+[2019-10-20 12:56:41 +0000] [30778] [INFO] Listening at: https://0.0.0.0:7000 (30778)
+[2019-10-20 12:56:41 +0000] [30778] [INFO] Using worker: sync
+[2019-10-20 12:56:41 +0000] [30781] [INFO] Booting worker with pid: 30781
+[2019-10-20 12:56:41 +0000] [30784] [INFO] Booting worker with pid: 30784
+[2019-10-20 12:56:41 +0000] [30786] [INFO] Booting worker with pid: 30786
+[2019-10-20 12:56:41 +0000] [30788] [INFO] Booting worker with pid: 30788
+[2019-10-20 12:58:06 +0000] [30788] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 12:58:19 +0000] [30788] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 13:07:26 +0000] [30786] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 13:21:23 +0000] [30784] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:21:23 +0000] [30786] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:21:24 +0000] [30788] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:21:24 +0000] [30781] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+{'bbox': [-121.61723, 39.752783, -121.614983, 39.755869], 'routes': [{'summary': {'distance': 523.5, 'duration': 209.4, 'ascent': 0.6, 'descent': 5.8}, 'segments': [{'distance': 523.5, 'duration': 209.4, 'steps': [{'distance': 182.8, 'duration': 73.1, 'type': 11, 'instruction': 'Siga para oeste em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 3]}, {'distance': 340.8, 'duration': 136.3, 'type': 12, 'instruction': 'Vire à esquerda em direção a <b>Academy Drive</b>', 'name': 'Academy Drive', 'way_points': [3, 11]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Academy Drive, à esquerda', 'name': '-', 'way_points': [11, 11]}], 'ascent': 0.5526315789473983, 'descent': 5.8454887218046}], 'bbox': [-121.61723, 39.752783, -121.614983, 39.755869], 'geometry': 'eysqFr|geVozhB?xJcBBh@C@FEB@DDD?N@?jGBjHbBBlGX@z@\\?x@`D@zM', 'way_points': [0, 11], 'extras': {'steepness': {'values': [[0, 11, 0]], 'summary': [{'value': 0.0, 'distance': 523.5, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571576913069, 'query': {'coordinates': [[-121.61498308181764, 39.75581800256368], [-121.61719322204591, 39.75278264176571]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+[2019-10-20 13:26:21 +0000] [30786] [INFO] Worker exiting (pid: 30786)
+[2019-10-20 13:26:21 +0000] [30784] [INFO] Worker exiting (pid: 30784)
+[2019-10-20 13:26:21 +0000] [30781] [INFO] Worker exiting (pid: 30781)
+{'routes': [{'summary': {'distance': 639.4, 'duration': 255.7, 'ascent': 4.3, 'descent': 0.8}, 'segments': [{'distance': 639.4, 'duration': 255.7, 'steps': [{'distance': 468.0, 'duration': 187.2, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 5]}, {'distance': 51.9, 'duration': 20.8, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [5, 6]}, {'distance': 99.2, 'duration': 39.7, 'type': 4, 'instruction': 'Vire ligeiramente à esquerda em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [6, 9]}, {'distance': 20.3, 'duration': 8.1, 'type': 1, 'instruction': 'Vire à direita em direção a <b>South Stoneridge Circle</b>', 'name': 'South Stoneridge Circle', 'way_points': [9, 11]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a South Stoneridge Circle, à direita', 'name': '-', 'way_points': [11, 11]}], 'ascent': 4.29814814814813, 'descent': 0.7731481481480387}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'geometry': 'eysqFf`heVozhB?_S`CAwDe@?sB_A?_AmBAyAkE|AM_GlAiAkD`@EOl@??V^??BX', 'way_points': [0, 11], 'extras': {'steepness': {'values': [[0, 11, 0]], 'summary': [{'value': 0.0, 'distance': 639.4, 'amount': 100.0}]}}}], 'bbox': [-121.615563, 39.754509, -121.609618, 39.755887], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571576208106, 'query': {'coordinates': [[-121.61556243896486, 39.75583449872429], [-121.60981178283693, 39.7545312898626]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'routes': [{'summary': {'distance': 220.1, 'duration': 88.1}, 'segments': [{'distance': 220.1, 'duration': 88.1, 'steps': [{'distance': 220.1, 'duration': 88.1, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 1]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Nunneley Road, à esquerda', 'name': '-', 'way_points': [1, 1]}]}], 'bbox': [-121.61582, 39.755867, -121.613245, 39.755872], 'geometry': 'eysqFzaheVozhB?cO?', 'way_points': [0, 1], 'extras': {'steepness': {'values': [], 'summary': []}}}], 'bbox': [-121.61582, 39.755867, -121.613245, 39.755872], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571576286386, 'query': {'coordinates': [[-121.61581993103029, 39.75578501023059], [-121.61324501037599, 39.75588398718247]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'routes': [{'summary': {'distance': 807.4, 'duration': 322.9, 'ascent': 10.4, 'descent': 0.7}, 'segments': [{'distance': 807.4, 'duration': 322.9, 'steps': [{'distance': 807.4, 'duration': 322.9, 'type': 11, 'instruction': 'Siga para este em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [0, 16]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Nunneley Road, à direita', 'name': '-', 'way_points': [16, 16]}], 'ascent': 10.437121212121042, 'descent': 0.7121212121206781}], 'bbox': [-121.616271, 39.755867, -121.606827, 39.755895], 'geometry': 'eysqFtdheVozhB?mWnCAwDm@?sBcA?_AmBAyAmE?}@yC?MoA?kCyN?EsA?aA_D?aBwI?e@q@?gAuC?i@c@?s@{@?}@a@', 'way_points': [0, 16], 'extras': {'steepness': {'values': [[0, 16, 1]], 'summary': [{'value': 1.0, 'distance': 807.4, 'amount': 100.0}]}}}], 'bbox': [-121.616271, 39.755867, -121.606827, 39.755895], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571576318958, 'query': {'coordinates': [[-121.61627054214479, 39.755752017881704], [-121.60682916641237, 39.75578501023059]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+[2019-10-20 13:26:21 +0000] [30788] [INFO] Worker exiting (pid: 30788)
+[2019-10-20 13:26:21 +0000] [1582] [INFO] Booting worker with pid: 1582
+[2019-10-20 13:26:21 +0000] [1584] [INFO] Booting worker with pid: 1584
+[2019-10-20 13:26:21 +0000] [1586] [INFO] Booting worker with pid: 1586
+[2019-10-20 13:26:22 +0000] [1588] [INFO] Booting worker with pid: 1588
+[2019-10-20 13:26:33,551] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:28:03,833] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:28:35,749] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:29:10 +0000] [1584] [INFO] Worker exiting (pid: 1584)
+[2019-10-20 13:29:10 +0000] [1898] [INFO] Booting worker with pid: 1898
+[2019-10-20 13:29:15 +0000] [1582] [INFO] Worker exiting (pid: 1582)
+[2019-10-20 13:29:15 +0000] [1912] [INFO] Booting worker with pid: 1912
+[2019-10-20 13:29:21 +0000] [1586] [INFO] Worker exiting (pid: 1586)
+[2019-10-20 13:29:21 +0000] [1927] [INFO] Booting worker with pid: 1927
+[2019-10-20 13:29:23 +0000] [1588] [INFO] Worker exiting (pid: 1588)
+[2019-10-20 13:29:23 +0000] [1937] [INFO] Booting worker with pid: 1937
+[2019-10-20 13:29:40,576] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:31:08,196] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:31:53,929] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:36:04,866] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:38:58,116] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:40:11,597] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(";")[1];
+IndexError: list index out of range
+[2019-10-20 13:40:47 +0000] [1912] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:40:48 +0000] [1937] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:40:48 +0000] [1927] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:40:48 +0000] [1898] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:40:54 +0000] [1898] [INFO] Worker exiting (pid: 1898)
+[2019-10-20 13:40:54 +0000] [1927] [INFO] Worker exiting (pid: 1927)
+[2019-10-20 13:40:54 +0000] [1912] [INFO] Worker exiting (pid: 1912)
+[2019-10-20 13:40:54 +0000] [1937] [INFO] Worker exiting (pid: 1937)
+[2019-10-20 13:40:54 +0000] [3196] [INFO] Booting worker with pid: 3196
+[2019-10-20 13:40:54 +0000] [3198] [INFO] Booting worker with pid: 3198
+[2019-10-20 13:40:54 +0000] [3200] [INFO] Booting worker with pid: 3200
+[2019-10-20 13:40:54 +0000] [3202] [INFO] Booting worker with pid: 3202
+[2019-10-20 13:41:02,823] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 117, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 39, in calcroute
+    lng=p.split(",")[1];
+IndexError: list index out of range
+[2019-10-20 13:41:38 +0000] [3196] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:41:38 +0000] [3198] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:41:38 +0000] [3200] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:41:38 +0000] [3202] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:41:58 +0000] [3198] [INFO] Worker exiting (pid: 3198)
+[2019-10-20 13:41:58 +0000] [3202] [INFO] Worker exiting (pid: 3202)
+[2019-10-20 13:41:58 +0000] [3196] [INFO] Worker exiting (pid: 3196)
+[2019-10-20 13:41:58 +0000] [3200] [INFO] Worker exiting (pid: 3200)
+[2019-10-20 13:41:58 +0000] [3319] [INFO] Booting worker with pid: 3319
+[2019-10-20 13:41:58 +0000] [3322] [INFO] Booting worker with pid: 3322
+[2019-10-20 13:41:58 +0000] [3323] [INFO] Booting worker with pid: 3323
+[2019-10-20 13:41:58 +0000] [3326] [INFO] Booting worker with pid: 3326
+[2019-10-20 13:42:01,243] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 118, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 40, in calcroute
+    lng=p.split(",")[1];
+IndexError: list index out of range
+[2019-10-20 13:42:29 +0000] [3319] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:42:29 +0000] [3322] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:42:29 +0000] [3323] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:42:29 +0000] [3326] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:42:37 +0000] [3323] [INFO] Worker exiting (pid: 3323)
+[2019-10-20 13:42:37 +0000] [3319] [INFO] Worker exiting (pid: 3319)
+['39.75569940428055,-121.62456984121779', '39.75671190529304,-121.62468675476421', '39.75671190529304,-121.6235176193', '']
+[2019-10-20 13:42:37 +0000] [3326] [INFO] Worker exiting (pid: 3326)
+[2019-10-20 13:42:37 +0000] [3322] [INFO] Worker exiting (pid: 3322)
+[2019-10-20 13:42:37 +0000] [3398] [INFO] Booting worker with pid: 3398
+[2019-10-20 13:42:37 +0000] [3400] [INFO] Booting worker with pid: 3400
+[2019-10-20 13:42:37 +0000] [3402] [INFO] Booting worker with pid: 3402
+[2019-10-20 13:42:37 +0000] [3404] [INFO] Booting worker with pid: 3404
+[2019-10-20 13:42:38,519] ERROR in app: Exception on /build [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/firescue/flask/app/routes.py", line 118, in build
+    route=calcroute(olng,olat,dlng,dlat,problems)
+  File "/root/firescue/flask/app/routes.py", line 40, in calcroute
+    lng=p.split(",")[1];
+IndexError: list index out of range
+[2019-10-20 13:43:14 +0000] [3398] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:43:14 +0000] [3402] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:43:14 +0000] [3400] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:43:14 +0000] [3404] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+['39.75569940428055,-121.62456984121779', '39.75671190529304,-121.62468675476421', '39.75671190529304,-121.6235176193', '']
+[2019-10-20 13:44:06 +0000] [3404] [INFO] Worker exiting (pid: 3404)
+[2019-10-20 13:44:06 +0000] [3402] [INFO] Worker exiting (pid: 3402)
+[2019-10-20 13:44:06 +0000] [3400] [INFO] Worker exiting (pid: 3400)
+[2019-10-20 13:44:06 +0000] [3398] [INFO] Worker exiting (pid: 3398)
+[2019-10-20 13:44:07 +0000] [3566] [INFO] Booting worker with pid: 3566
+[2019-10-20 13:44:07 +0000] [3569] [INFO] Booting worker with pid: 3569
+[2019-10-20 13:44:07 +0000] [3571] [INFO] Booting worker with pid: 3571
+[2019-10-20 13:44:07 +0000] [3573] [INFO] Booting worker with pid: 3573
+[2019-10-20 13:44:09 +0000] [3566] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:44:09 +0000] [3569] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:44:09 +0000] [3571] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:44:09 +0000] [3573] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 13:44:16 +0000] [3573] [INFO] Worker exiting (pid: 3573)
+[2019-10-20 13:44:16 +0000] [3571] [INFO] Worker exiting (pid: 3571)
+[2019-10-20 13:44:16 +0000] [3569] [INFO] Worker exiting (pid: 3569)
+[2019-10-20 13:44:16 +0000] [3566] [INFO] Worker exiting (pid: 3566)
+[2019-10-20 13:44:17 +0000] [3604] [INFO] Booting worker with pid: 3604
+[2019-10-20 13:44:17 +0000] [3607] [INFO] Booting worker with pid: 3607
+[2019-10-20 13:44:17 +0000] [3610] [INFO] Booting worker with pid: 3610
+[2019-10-20 13:44:17 +0000] [3612] [INFO] Booting worker with pid: 3612
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579058070, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579124743, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579187939, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}[2019-10-20 13:47:33 +0000] [3610] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579157961, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579223053, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579275863, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}[2019-10-20 13:50:58 +0000] [3604] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 13:50:59 +0000] [3612] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 13:52:13 +0000] [3612] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 13:52:13 +0000] [3610] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 13:52:54 +0000] [3610] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 14:04:04 +0000] [3604] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 14:08:07 +0000] [3607] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:08:07 +0000] [3610] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:08:07 +0000] [3604] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:08:07 +0000] [3612] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 507.2, 'duration': 202.9, 'ascent': 1.8}, 'segments': [{'distance': 507.2, 'duration': 202.9, 'steps': [{'distance': 128.2, 'duration': 51.3, 'type': 11, 'instruction': 'Siga para norte em direção a <b>Academy Drive</b>', 'name': 'Academy Drive', 'way_points': [0, 4]}, {'distance': 379.0, 'duration': 151.6, 'type': 5, 'instruction': 'Vire ligeiramente à direita em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [4, 7]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Nunneley Road, à direita', 'name': '-', 'way_points': [7, 7]}], 'ascent': 1.771428571428487}], 'bbox': [-121.617183, 39.754696, -121.612687, 39.755872], 'geometry': '{qsqFjjheVcqhBiEAuCOAIEEICAUAGSCi@O?cY}B', 'way_points': [0, 7], 'extras': {'steepness': {'values': [[0, 7, 0]], 'summary': [{'value': 0.0, 'distance': 507.2, 'amount': 100.0}]}}}], 'bbox': [-121.617183, 39.754696, -121.612687, 39.755872], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579573959, 'query': {'coordinates': [[-121.61721467971803, 39.75469625437269], [-121.6126871109009, 39.75583449872429]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579151516, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579252385, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579295948, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 465.2, 'duration': 186.1, 'ascent': 7.4, 'descent': 0.4}, 'segments': [{'distance': 465.2, 'duration': 186.1, 'steps': [{'distance': 31.6, 'duration': 12.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 23.4, 'duration': 9.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [14, 15]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à esquerda', 'name': '-', 'way_points': [15, 15]}], 'ascent': 7.372368421052556, 'descent': 0.44736842105260166}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'geometry': 'oysqFrtieVklfBr@\\p@BKHHWFx@sDPSG@gAc@@qBcAiFaAe@qEc@SiDg@SsDICyAENyA{@bDyMGPYe@W?', 'way_points': [0, 15], 'extras': {'steepness': {'values': [[0, 15, 1]], 'summary': [{'value': 1.0, 'distance': 465.2, 'amount': 100.0}]}}}], 'bbox': [-121.62409, 39.755299, -121.622043, 39.757647], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579425790, 'query': {'coordinates': [[-121.62388801574708, 39.75590048332728], [-121.62296533584596, 39.75766554799438]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.624474, 39.75497, -121.622043, 39.757435], 'routes': [{'summary': {'distance': 488.7, 'duration': 195.5, 'ascent': 9.9}, 'segments': [{'distance': 488.7, 'duration': 195.5, 'steps': [{'distance': 83.4, 'duration': 33.4, 'type': 11, 'instruction': 'Siga para nordeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 88.7, 'duration': 35.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 14]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Willow Street, à esquerda', 'name': '-', 'way_points': [14, 14]}], 'ascent': 9.924999999999955}], 'bbox': [-121.624474, 39.75497, -121.622043, 39.757435], 'geometry': 'qssqF|wieVsyeBiCkAyFBKWHWSx@sDuASGEgAc@qAqBcAsGaAe@qEc@SiDg@SsDICyAENyA{@bDyMAFY', 'way_points': [0, 14], 'extras': {'steepness': {'values': [[0, 14, 1]], 'summary': [{'value': 1.0, 'distance': 488.7, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571579458551, 'query': {'coordinates': [[-121.62444591522217, 39.754960196767094], [-121.62315845489503, 39.757187170450294]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+[2019-10-20 14:08:10 +0000] [3610] [INFO] Worker exiting (pid: 3610)
+[2019-10-20 14:08:10 +0000] [3607] [INFO] Worker exiting (pid: 3607)
+[2019-10-20 14:08:10 +0000] [3604] [INFO] Worker exiting (pid: 3604)
+[2019-10-20 14:08:10 +0000] [3612] [INFO] Worker exiting (pid: 3612)
+[2019-10-20 14:08:10 +0000] [6260] [INFO] Booting worker with pid: 6260
+[2019-10-20 14:08:10 +0000] [6264] [INFO] Booting worker with pid: 6264
+[2019-10-20 14:08:10 +0000] [6266] [INFO] Booting worker with pid: 6266
+[2019-10-20 14:08:10 +0000] [6268] [INFO] Booting worker with pid: 6268
+[2019-10-20 14:11:57 +0000] [6264] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 14:16:15 +0000] [6264] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 14:16:21 +0000] [6264] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 14:17:31 +0000] [6268] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:17:31 +0000] [6266] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:17:31 +0000] [6260] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:17:31 +0000] [6264] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.617216, 39.753737, -121.613197, 39.755872], 'routes': [{'summary': {'distance': 570.1, 'duration': 228.0, 'ascent': 6.3}, 'segments': [{'distance': 570.1, 'duration': 228.0, 'steps': [{'distance': 234.7, 'duration': 93.9, 'type': 11, 'instruction': 'Siga para norte em direção a <b>Academy Drive</b>', 'name': 'Academy Drive', 'way_points': [0, 7]}, {'distance': 335.4, 'duration': 134.2, 'type': 5, 'instruction': 'Vire ligeiramente à direita em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [7, 10]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Nunneley Road, em frente', 'name': '-', 'way_points': [10, 10]}], 'ascent': 6.306451612903402}], 'bbox': [-121.617216, 39.753737, -121.613197, 39.755872], 'geometry': '{ksqFrjheV_ugB???YA?cBC_FkGC}NOA{@EEu@CAy@AGs@Ci@m@?}U_G', 'way_points': [0, 10], 'extras': {'steepness': {'values': [[0, 10, 1]], 'summary': [{'value': 1.0, 'distance': 570.1, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571580849731, 'query': {'coordinates': [[-121.6172747628047, 39.75373735013509], [-121.61319724504403, 39.75586586701903]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 423.3, 'duration': 169.3, 'ascent': 1.9}, 'segments': [{'distance': 423.3, 'duration': 169.3, 'steps': [{'distance': 133.9, 'duration': 53.6, 'type': 11, 'instruction': 'Siga para norte em direção a <b>Academy Drive</b>', 'name': 'Academy Drive', 'way_points': [0, 4]}, {'distance': 289.4, 'duration': 115.8, 'type': 5, 'instruction': 'Vire ligeiramente à direita em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [4, 7]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Nunneley Road, à esquerda', 'name': '-', 'way_points': [7, 7]}], 'ascent': 1.8653846153846416}], 'bbox': [-121.617184, 39.754645, -121.613736, 39.755871], 'geometry': 'oqsqFjjheVcqhBuEAuCOAIEEICAUAGSCi@O?qRoC', 'way_points': [0, 7], 'extras': {'steepness': {'values': [[0, 7, 0]], 'summary': [{'value': 0.0, 'distance': 423.3, 'amount': 100.0}]}}}], 'bbox': [-121.617184, 39.754645, -121.613736, 39.755871], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571580980398, 'query': {'coordinates': [[-121.61714842019047, 39.754644310371646], [-121.61373618164342, 39.75591481163363]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+[2019-10-20 14:17:37 +0000] [6264] [INFO] Worker exiting (pid: 6264)
+[2019-10-20 14:17:37 +0000] [6266] [INFO] Worker exiting (pid: 6266)
+[2019-10-20 14:17:37 +0000] [6268] [INFO] Worker exiting (pid: 6268)
+[2019-10-20 14:17:37 +0000] [6260] [INFO] Worker exiting (pid: 6260)
+[2019-10-20 14:17:37 +0000] [7373] [INFO] Booting worker with pid: 7373
+[2019-10-20 14:17:37 +0000] [7376] [INFO] Booting worker with pid: 7376
+[2019-10-20 14:17:37 +0000] [7379] [INFO] Booting worker with pid: 7379
+[2019-10-20 14:17:37 +0000] [7381] [INFO] Booting worker with pid: 7381
+[2019-10-20 14:18:26 +0000] [7379] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:18:26 +0000] [7376] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:18:27 +0000] [7373] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:18:27 +0000] [7381] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:18:30 +0000] [7379] [INFO] Worker exiting (pid: 7379)
+[2019-10-20 14:18:30 +0000] [7381] [INFO] Worker exiting (pid: 7381)
+[2019-10-20 14:18:30 +0000] [7376] [INFO] Worker exiting (pid: 7376)
+[2019-10-20 14:18:30 +0000] [7373] [INFO] Worker exiting (pid: 7373)
+[2019-10-20 14:18:31 +0000] [7479] [INFO] Booting worker with pid: 7479
+[2019-10-20 14:18:31 +0000] [7482] [INFO] Booting worker with pid: 7482
+[2019-10-20 14:18:31 +0000] [7483] [INFO] Booting worker with pid: 7483
+[2019-10-20 14:18:31 +0000] [7486] [INFO] Booting worker with pid: 7486
+[2019-10-20 14:19:05 +0000] [7486] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+[2019-10-20 14:20:51 +0000] [7479] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:20:52 +0000] [7483] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:20:52 +0000] [7482] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:20:52 +0000] [7486] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.62409, 39.755299, -121.621969, 39.75709], 'routes': [{'summary': {'distance': 387.0, 'duration': 154.8, 'ascent': 4.8, 'descent': 0.9}, 'segments': [{'distance': 387.0, 'duration': 154.8, 'steps': [{'distance': 64.0, 'duration': 25.6, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 1]}, {'distance': 100.7, 'duration': 40.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [1, 4]}, {'distance': 215.8, 'duration': 86.3, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [4, 11]}, {'distance': 6.4, 'duration': 2.6, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [11, 12]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Willow Street, à esquerda', 'name': '-', 'way_points': [12, 12]}], 'ascent': 4.841666666666697, 'descent': 0.9166666666667425}], 'bbox': [-121.62409, 39.755299, -121.621969, 39.75709], 'geometry': 'c{sqFrsieVoofBfB|@bBBKLHWHx@sDb@SG@gAc@TqBcAcFaAe@qEc@SiDg@SsDICyA@MyA', 'way_points': [0, 12], 'extras': {'steepness': {'values': [[0, 12, 1]], 'summary': [{'value': 1.0, 'distance': 387.0, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571581144816, 'query': {'coordinates': [[-121.62381253290783, 39.75623835078664], [-121.62196691960564, 39.757092209455855]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+[2019-10-20 14:20:57 +0000] [7486] [INFO] Worker exiting (pid: 7486)
+[2019-10-20 14:20:57 +0000] [7479] [INFO] Worker exiting (pid: 7479)
+[2019-10-20 14:20:57 +0000] [7483] [INFO] Worker exiting (pid: 7483)
+[2019-10-20 14:20:57 +0000] [7482] [INFO] Worker exiting (pid: 7482)
+[2019-10-20 14:20:57 +0000] [7751] [INFO] Booting worker with pid: 7751
+[2019-10-20 14:20:57 +0000] [7752] [INFO] Booting worker with pid: 7752
+[2019-10-20 14:20:57 +0000] [7755] [INFO] Booting worker with pid: 7755
+[2019-10-20 14:20:57 +0000] [7757] [INFO] Booting worker with pid: 7757
+[2019-10-20 14:21:45 +0000] [7751] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:21:45 +0000] [7752] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:21:45 +0000] [7755] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:21:45 +0000] [7757] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:21:49 +0000] [7757] [INFO] Worker exiting (pid: 7757)
+[2019-10-20 14:21:49 +0000] [7755] [INFO] Worker exiting (pid: 7755)
+[2019-10-20 14:21:49 +0000] [7752] [INFO] Worker exiting (pid: 7752)
+[2019-10-20 14:21:49 +0000] [7751] [INFO] Worker exiting (pid: 7751)
+[2019-10-20 14:21:49 +0000] [7859] [INFO] Booting worker with pid: 7859
+[2019-10-20 14:21:49 +0000] [7860] [INFO] Booting worker with pid: 7860
+[2019-10-20 14:21:49 +0000] [7862] [INFO] Booting worker with pid: 7862
+[2019-10-20 14:21:49 +0000] [7865] [INFO] Booting worker with pid: 7865
+[2019-10-20 14:22:06 +0000] [7860] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:22:06 +0000] [7862] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:22:06 +0000] [7865] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:22:06 +0000] [7859] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:22:09 +0000] [7865] [INFO] Worker exiting (pid: 7865)
+[2019-10-20 14:22:09 +0000] [7859] [INFO] Worker exiting (pid: 7859)
+[2019-10-20 14:22:09 +0000] [7862] [INFO] Worker exiting (pid: 7862)
+[2019-10-20 14:22:09 +0000] [7860] [INFO] Worker exiting (pid: 7860)
+[2019-10-20 14:22:10 +0000] [7923] [INFO] Booting worker with pid: 7923
+[2019-10-20 14:22:10 +0000] [7926] [INFO] Booting worker with pid: 7926
+[2019-10-20 14:22:10 +0000] [7928] [INFO] Booting worker with pid: 7928
+[2019-10-20 14:22:10 +0000] [7930] [INFO] Booting worker with pid: 7930
+[2019-10-20 14:23:47 +0000] [7923] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:23:48 +0000] [7930] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:23:48 +0000] [7928] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:23:48 +0000] [7926] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:23:51 +0000] [7926] [INFO] Worker exiting (pid: 7926)
+[2019-10-20 14:23:51 +0000] [7928] [INFO] Worker exiting (pid: 7928)
+[2019-10-20 14:23:51 +0000] [7923] [INFO] Worker exiting (pid: 7923)
+[2019-10-20 14:23:51 +0000] [7930] [INFO] Worker exiting (pid: 7930)
+[2019-10-20 14:23:51 +0000] [8112] [INFO] Booting worker with pid: 8112
+[2019-10-20 14:23:51 +0000] [8114] [INFO] Booting worker with pid: 8114
+[2019-10-20 14:23:51 +0000] [8117] [INFO] Booting worker with pid: 8117
+[2019-10-20 14:23:51 +0000] [8119] [INFO] Booting worker with pid: 8119
+[2019-10-20 14:23:53 +0000] [8119] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = six.next(parser)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 181, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 54, in __init__
+    unused = self.parse(self.unreader)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 193, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/message.py", line 184, in get_data
+    data = unreader.read()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.624244, 39.754336, -121.622043, 39.758426], 'routes': [{'summary': {'distance': 616.2, 'duration': 246.5, 'ascent': 11.4, 'descent': 1.5}, 'segments': [{'distance': 616.2, 'duration': 246.5, 'steps': [{'distance': 74.6, 'duration': 29.8, 'type': 11, 'instruction': 'Siga para sudeste em direção a <b>Cedar Street</b>', 'name': 'Cedar Street', 'way_points': [0, 3]}, {'distance': 329.7, 'duration': 131.9, 'type': 2, 'instruction': 'Vire bastante à esquerda em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [3, 14]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [14, 17]}, {'distance': 118.1, 'duration': 47.3, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [17, 19]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Almond Street, à direita', 'name': '-', 'way_points': [19, 19]}], 'ascent': 11.424999999999955, 'descent': 1.474999999999909}], 'bbox': [-121.624244, 39.754336, -121.622043, 39.758426], 'geometry': 'gqsqFnvieVgpeBFScB`@gBaAHc@C_@EC[IAgAi@m@{@[sASG[gAc@mBqBcAiLaAe@gHc@SyEg@SuEIC_BENyA{@bDyMGPYeAi@t@{BgAnF', 'way_points': [0, 19], 'extras': {'steepness': {'values': [[0, 19, 1]], 'summary': [{'value': 1.0, 'distance': 616.2, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571581441218, 'query': {'coordinates': [[-121.6241240501404, 39.754795232889116], [-121.62221431732179, 39.75834186919748]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.624336, 39.754336, -121.622043, 39.758175], 'routes': [{'summary': {'distance': 594.4, 'duration': 237.8, 'ascent': 2.7, 'descent': 10.1}, 'segments': [{'distance': 594.4, 'duration': 237.8, 'steps': [{'distance': 87.7, 'duration': 35.1, 'type': 11, 'instruction': 'Siga para sudoeste em direção a <b>Almond Street</b>', 'name': 'Almond Street', 'way_points': [0, 2]}, {'distance': 93.7, 'duration': 37.5, 'type': 0, 'instruction': 'Vire à esquerda em direção a <b>Willow Street</b>', 'name': 'Willow Street', 'way_points': [2, 5]}, {'distance': 329.7, 'duration': 131.9, 'type': 1, 'instruction': 'Vire à direita em direção a <b>Black Olive Drive</b>', 'name': 'Black Olive Drive', 'way_points': [5, 16]}, {'distance': 83.3, 'duration': 33.3, 'type': 3, 'instruction': 'Vire bastante à direita em direção a <b>Cedar Street</b>', 'name': 'Cedar Street', 'way_points': [16, 19]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Cedar Street, à esquerda', 'name': '-', 'way_points': [19, 19]}], 'ascent': 2.6749999999999545, 'descent': 10.149999999999977}], 'bbox': [-121.624336, 39.754336, -121.622043, 39.758175], 'geometry': 'sgtqFhlieVskgBhAh@tCdAh@k@FQSz@cDyEDO]HB]f@R{@b@Rq@`Ad@qApBbAtDfAb@|HRFxAz@ZtHfAh@|KZHbB^DbBIb@xAa@fBjFOf@f@', 'way_points': [0, 19], 'extras': {'steepness': {'values': [[0, 19, -1]], 'summary': [{'value': -1.0, 'distance': 594.4, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571581521406, 'query': {'coordinates': [[-121.62251472473146, 39.75814392221575], [-121.62438154220582, 39.754564282796224]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'bbox': [-121.625217, 39.755421, -121.623382, 39.756059], 'routes': [{'summary': {'distance': 172.3, 'duration': 68.9, 'ascent': 3.5}, 'segments': [{'distance': 172.3, 'duration': 68.9, 'steps': [{'distance': 172.3, 'duration': 68.9, 'type': 11, 'instruction': 'Siga para sudeste em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [0, 5]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Fir Street, à esquerda', 'name': '-', 'way_points': [5, 5]}], 'ascent': 3.4722222222221717}], 'bbox': [-121.625217, 39.755421, -121.623382, 39.756059], 'geometry': 'kzsqFr|ieV_jeBlAwEsN@Ig@BKc@HW]`@iBwA', 'way_points': [0, 5], 'extras': {'steepness': {'values': [[0, 5, 1]], 'summary': [{'value': 1.0, 'distance': 172.3, 'amount': 100.0}]}}}], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571581546733, 'query': {'coordinates': [[-121.62514328956604, 39.7561809171847], [-121.6233515739441, 39.755475706339254]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-18T10:31:02Z'}}}[2019-10-20 14:26:11 +0000] [8112] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:26:11 +0000] [8114] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:26:11 +0000] [8119] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+[2019-10-20 14:26:11 +0000] [8117] [INFO] Worker reloading: /root/firescue/flask/app/routes.py modified
+
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 421.4, 'duration': 168.6, 'ascent': 5.0}, 'segments': [{'distance': 421.4, 'duration': 168.6, 'steps': [{'distance': 207.4, 'duration': 83.0, 'type': 11, 'instruction': 'Siga para norte em direção a <b>Academy Drive</b>', 'name': 'Academy Drive', 'way_points': [0, 5]}, {'distance': 213.9, 'duration': 85.6, 'type': 5, 'instruction': 'Vire ligeiramente à direita em direção a <b>Nunneley Road</b>', 'name': 'Nunneley Road', 'way_points': [5, 8]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Nunneley Road, à direita', 'name': '-', 'way_points': [8, 8]}], 'ascent': 5.0}], 'bbox': [-121.617208, 39.753984, -121.614619, 39.755869], 'geometry': 'kmsqFpjheVk~gBmACuCkGCyIOASEEm@CAq@AGo@Ci@k@?aMgH', 'way_points': [0, 8], 'extras': {'steepness': {'values': [[0, 8, 1]], 'summary': [{'value': 1.0, 'distance': 421.4, 'amount': 100.0}]}}}], 'bbox': [-121.617208, 39.753984, -121.614619, 39.755869], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571581457046, 'query': {'coordinates': [[-121.6171717643738, 39.75398295840404], [-121.61461830139162, 39.75573212562365]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+{'type': 'MultiPolygon', 'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]]}
+{'routes': [{'summary': {'distance': 299.8, 'duration': 119.9, 'ascent': 9.6}, 'segments': [{'distance': 299.8, 'duration': 119.9, 'steps': [{'distance': 299.8, 'duration': 119.9, 'type': 11, 'instruction': 'Siga para este em direção a <b>Fir Street</b>', 'name': 'Fir Street', 'way_points': [0, 7]}, {'distance': 0.0, 'duration': 0.0, 'type': 10, 'instruction': 'Chegar a Fir Street, à direita', 'name': '-', 'way_points': [7, 7]}], 'ascent': 9.615384615384642}], 'bbox': [-121.62576, 39.755162, -121.622552, 39.756241], 'geometry': 'o{sqF~_jeVwjdBHe@?fB}Gc\\@IcABKy@HWs@x@sDcRZ{AgE', 'way_points': [0, 7], 'extras': {'steepness': {'values': [[0, 7, 1]], 'summary': [{'value': 1.0, 'distance': 299.8, 'amount': 100.0}]}}}], 'bbox': [-121.62576, 39.755162, -121.622552, 39.756241], 'metadata': {'attribution': 'openrouteservice.org | OpenStreetMap contributors', 'service': 'routing', 'timestamp': 1571581470319, 'query': {'coordinates': [[-121.62586212158205, 39.75603245234358], [-121.62257909774782, 39.75510866391943]], 'profile': 'cycling-regular', 'format': 'json', 'units': 'm', 'language': 'pt', 'geometry': True, 'instructions': True, 'instructions_format': 'html', 'continue_straight': True, 'elevation': True, 'extra_info': ['steepness'], 'options': {'avoid_features': ['ferries', 'steps', 'fords'], 'profile_params': {'weightings': {'steepness_difficulty': 1}}, 'avoid_polygons': {'coordinates': [[[[-121.62451984121779, 39.75574940428055], [-121.6246198412178, 39.75574940428055], [-121.6246198412178, 39.75564940428055], [-121.62451984121779, 39.75564940428055], [-121.62451984121779, 39.75574940428055]]], [[[-121.62463675476421, 39.75676190529304], [-121.62473675476421, 39.75676190529304], [-121.62473675476421, 39.756661905293036], [-121.62463675476421, 39.756661905293036], [-121.62463675476421, 39.75676190529304]]], [[[-121.6234676193, 39.75676190529304], [-121.6235676193, 39.75676190529304], [-121.6235676193, 39.756661905293036], [-121.6234676193, 39.756661905293036], [-121.6234676193, 39.75676190529304]]]], 'type': 'MultiPolygon'}}}, 'engine': {'version': '5.0.2', 'build_date': '2019-09-21T10:39:30Z'}}}
+[2019-10-20 14:26:14 +0000] [8119] [INFO] Worker exiting (pid: 8119)
+[2019-10-20 14:26:14 +0000] [8117] [INFO] Worker exiting (pid: 8117)
+[2019-10-20 14:26:14 +0000] [8114] [INFO] Worker exiting (pid: 8114)
+[2019-10-20 14:26:14 +0000] [8112] [INFO] Worker exiting (pid: 8112)
+[2019-10-20 14:26:14 +0000] [8382] [INFO] Booting worker with pid: 8382
+[2019-10-20 14:26:14 +0000] [8385] [INFO] Booting worker with pid: 8385
+[2019-10-20 14:26:14 +0000] [8387] [INFO] Booting worker with pid: 8387
+[2019-10-20 14:26:14 +0000] [8389] [INFO] Booting worker with pid: 8389
